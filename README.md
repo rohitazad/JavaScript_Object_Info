@@ -11,7 +11,7 @@ What is object
   
   let's create an object named myCar and give it properties
   
-  #1. How to create a object we create a blank object and assign to key and value as a variable like this.
+  **#1**. How to create a object we create a blank object and assign to key and value as a variable like this.
 ```
   const myCar = new Object();
         myCar.make = 'Maruti Brezza';
@@ -21,7 +21,7 @@ What is object
         myCar.seats = 5;
 ```
 
-  #2. Create a object in direct 
+  **#2**. Create a object in direct 
  ```
         const myCar = {
           make: 'Maruti Brezza',
@@ -38,7 +38,7 @@ if you Unassigned properties of an object then it's by default show to  undefine
         myCar.price //  it's show to undefined
 ```
 
-#3. Properties of JavaScript objects can also be accessed or set using a bracket notation like this.
+**#3**. Properties of JavaScript objects can also be accessed or set using a bracket notation like this.
       
       
 ```
@@ -49,7 +49,7 @@ if you Unassigned properties of an object then it's by default show to  undefine
         myCar['seats'] = 5;
 ```
    
-#4. in object you can assing a string/number/array/function/object like this.
+**#4**. in object you can assing a string/number/array/function/object like this.
       
       
       
@@ -104,4 +104,28 @@ console.log(carObj.type)    // Dot syntax for a key named type
 console.log(carObj['date created'])  //  This key has a space
 ```
    
-   
+**#5**. Using a constructor function . Here are we used to two type first we create a constructor function and after that Create an instance of the object with new   like this.
+
+```
+function CarObj(make, model, year, mileage, seats) {
+  this.make = make;
+  this.model = model;
+  this.year = year;
+  this.mileage = mileage;
+  this.seats = seats;
+}
+
+// Now you can create an object called myCarObj as follows:
+const myCarObj = new CarObj('Maruti Brezza', 'Maruti', 2022, 20.6, 5);
+
+// You can create any number of CarObj objects by calls to new. For example,
+const swiftCar = new CarObj('Maruti Swift LXI', 'Maruti', 2019, 22.6, 5);
+const vernaCar = new CarObj('Hyundai Verna', 'Hyundai', 2021, 21, 5);
+const jeepCar = new CarObj('Jeep Compass', 'Jeep', 2020, 17.2, 5);
+
+```
+
+
+
+
+
