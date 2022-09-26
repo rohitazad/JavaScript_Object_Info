@@ -126,6 +126,22 @@ const jeepCar = new CarObj('Jeep Compass', 'Jeep', 2020, 17.2, 5);
 ```
 
 
+**#6** Using Object.create() to create new objects
+
+```
+      //The Object.create() method creates a new object, using an existing object as the prototype of the newly created object.
+      //To understand the Object.create method, just remember that it takes two parameters. The first parameter is a mandatory object that serves as the prototype of the new object to be created. The second parameter is an optional object which contains the properties to be added to the new object.
+
+
+      const companyObject = { company: 'Google Inc' };
+
+      const emp = Object.create(companyObject, { name: { value: 'emp first' } });
+
+      console.log(companyObject) // {company: "Google Inc"}
+      console.log(emp.name) // emp first
+```
+
+**#7** Using Object.assign() to create new objects
 
 
 
