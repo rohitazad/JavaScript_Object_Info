@@ -36,3 +36,61 @@ What is object
       ```
         myCar.price //  it's show to undefined
       ```
+
+      #3. Properties of JavaScript objects can also be accessed or set using a bracket notation like this.
+      
+      ```
+        myCar['make'] = 'Maruti Brezza';
+        myCar['model'] = 'Maruti';
+        myCar['year'] = 2022;
+        myCar['mileage'] = 20.6;
+        myCar['seats'] = 5;
+      ```
+      
+      
+      #4. in object you can assing a string/number/array/function/object like this.
+      
+      ```
+         // six variables are created and assigned in a single go,
+          // separated by commas
+        const carObj = {},
+          str='Maruti Brezza',
+          nub=2022,
+          array=[12,13,14,15],
+          fun=()=>{return 'best of car'},
+          rand= Math.random(),
+          obj= {} // blank object
+        
+        
+        // Now, creating additional properties.
+        
+        carObj.type              =  'Dot syntax for a key named type';
+        carObj['date created']   =  'This key has a space';
+        carObj[nub]              =  'This key has a number';
+        carObj[array]            =  'This key has a array';
+        carObj[fun]              =  'This key has a function';
+        carObj[str]              =   'This key is in variable str';
+        carObj[rand]             =    'A random number is the key here';
+        carObj[obj]              =    'This key is object obj';
+        carObj['']               =    'This key is an empty string';
+        
+        
+        console.log(carObj);
+        /*
+            "" : "This key is an empty string" 
+            0.13389161767770918 : "A random number is the key here" 
+            12,13,14,15 : "This key has a array" 
+            2022 : "This key has a number" 
+            ()=>{return 'best of car'} : "This key has a function" 
+            Maruti Brezza : "This key is in variable str" 
+            [object Object] : "This key is object obj" 
+            date created : "This key has a space" 
+            type : "Dot syntax for a key named type"
+        */
+        
+        // notice that in the log, the order of the properties listed is not the same as the order they were created.
+        
+        
+        
+      ```
+      
