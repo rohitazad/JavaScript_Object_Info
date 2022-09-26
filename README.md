@@ -97,4 +97,11 @@ if you Unassigned properties of an object then it's by default show to  undefine
         
  ```
    
-   Hello 
+   **Access to objects**
+```
+console.log(carObj['type'])  // Dot syntax for a key named type
+console.log(carObj.type)    // Dot syntax for a key named type
+console.log(carObj['date created'])  //  This key has a space
+```
+   
+   
