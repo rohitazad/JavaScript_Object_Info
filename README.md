@@ -169,3 +169,25 @@ const person = new Person('Rohit', 'Azad');
 console.log(person.firstName); // Rohit
 console.log(person.lastName); // Azad
 ```
+
+**#9**. Now learn to. Object.freeze() function 
+```
+// The Object.freeze() method freezes an object. Freezing an object prevents extensions and makes existing properties non-writable and non-configurable.
+// A frozen object can no longer be changed: new properties cannot be added, existing properties cannot be removed, their enumerability, configurability,
+// writability, or value cannot be changed, and the object's prototype cannot be re-assigned. freeze() returns the same object that was passed in.
+
+const emp = {name:'Rohit Azad', age:35}
+Object.freeze(emp);
+emp.age = 30;
+emp.add = 'Delhi India';
+
+console.log(emp) //  {name:'Rohit Azad', age:35}
+
+// here you see that emp object is not add any more property and not. edit any property.
+
+```
+
+
+
+
+
