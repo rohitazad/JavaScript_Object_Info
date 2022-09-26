@@ -30,27 +30,30 @@ What is object
           mileage:  20.6,
           seats: 5
         };
- ```
- 
-      if you Unassigned properties of an object then it's by default show to  undefined  like this 
-      ```
-        myCar.price //  it's show to undefined
-      ```
+```
 
-      #3. Properties of JavaScript objects can also be accessed or set using a bracket notation like this.
+if you Unassigned properties of an object then it's by default show to  undefined  like this 
+ 
+```
+        myCar.price //  it's show to undefined
+```
+
+#3. Properties of JavaScript objects can also be accessed or set using a bracket notation like this.
       
-      ```
+      
+```
         myCar['make'] = 'Maruti Brezza';
         myCar['model'] = 'Maruti';
         myCar['year'] = 2022;
         myCar['mileage'] = 20.6;
         myCar['seats'] = 5;
-      ```
+```
+   
+#4. in object you can assing a string/number/array/function/object like this.
       
       
-      #4. in object you can assing a string/number/array/function/object like this.
       
-      ```
+```
          // six variables are created and assigned in a single go,
           // separated by commas
         const carObj = {},
@@ -92,5 +95,6 @@ What is object
         
         
         
-      ```
-      
+ ```
+   
+   Hello 
