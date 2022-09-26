@@ -143,5 +143,13 @@ const jeepCar = new CarObj('Jeep Compass', 'Jeep', 2020, 17.2, 5);
 
 **#7** Using Object.assign() to create new objects
 
-
-
+```
+      // What if we want to create an object that needs to have properties from more than one object? Object.assign() comes to our help.
+      // Assume you have two objects as below:
+      const comNameObject = { company: 'Google Inc' };
+      const comAddObject = { office: 'USA ' };
+      
+      const companyDetails = Object.assign({}, comNameObject, comAddObject);
+      
+      console.log(companyDetails); // { company: "Google Inc", office: "USA" }
+```
