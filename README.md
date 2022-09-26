@@ -153,3 +153,19 @@ const jeepCar = new CarObj('Jeep Compass', 'Jeep', 2020, 17.2, 5);
       
       console.log(companyDetails); // { company: "Google Inc", office: "USA" }
 ```
+
+**#8**. using es6 classes
+
+```
+class Person {
+  constructor(fname, lname) {
+    this.firstName = fname;
+    this.lastName = lname;
+  }
+}
+
+const person = new Person('Rohit', 'Azad');
+
+console.log(person.firstName); // Rohit
+console.log(person.lastName); // Azad
+```
