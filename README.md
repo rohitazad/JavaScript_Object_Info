@@ -20,3 +20,19 @@ What is object
         myCar.mileage = 20.6;
         myCar.seats = 5;
 ```
+
+  #2. Create a object in direct 
+ ```
+        const myCar = {
+          make: 'Maruti Brezza',
+          model: 'Maruti',
+          year: 2022,
+          mileage:  20.6,
+          seats: 5
+        };
+ ```
+ 
+      if you Unassigned properties of an object then it's by default show to  undefined  like this 
+      ```
+        myCar.price //  it's show to undefined
+      ```
