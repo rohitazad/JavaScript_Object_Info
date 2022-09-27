@@ -208,4 +208,7 @@ console.log(emp) //  {name:'Rohit Azad', age:35}
 ```
 
 
+**More about Object Properties** :- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+
 
