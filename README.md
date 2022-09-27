@@ -212,3 +212,132 @@ console.log(emp) //  {name:'Rohit Azad', age:35}
 
 
 
+#**12 **how to copy objects in JavaScript ?
+
+**Copy Objects in JavaScript **
+
+we used to **3** way 
+
+Use the **spread (...)** syntax
+
+Use the **Object.assign()** method
+
+Use the **JSON.stringify()** and **JSON.parse()** methods
+
+```
+      const emp = {name:'Rohit Azad', age:35}
+      const newEmp = emp;
+      newEmp.age = 45;
+      
+      
+      console.log('emp', emp);
+      console.log('newEmp', newEmp);
+      // check result to this 
+      // you can see values are still connected to the  object key.
+```
+
+
+Solution of this we used to 3 way 
+#**12** - a). spread (...) syntax
+
+```
+    const emp = {name:'Rohit Azad', age:35}
+    const newEmp = {...emp};
+    newEmp.age = 45;
+    
+      console.log('emp', emp);
+      console.log('newEmp', newEmp);
+    // your problum is solved to this way
+    // it's called to Shallow copy
+```
+
+#12 - b). **Object.assign()** method 
+
+
+```
+   // using  Object.assign() method
+    const emp = {name:'Rohit Azad', age:35}
+    const newEmp = Object.assign({}, emp);
+    newEmp.age = 45;
+    
+      console.log('emp', emp);
+      console.log('newEmp', newEmp);
+    // your problum is solved to this way
+    // it's called to Shallow copy
+```
+
+
+#12 - c).  check with deep copy 
+
+```
+       const emp = {
+            name:'Rohit Azad',
+            age:35,
+            address:{
+              office:{
+                state:'Delhi',
+                city:'Delhi',
+                country : 'India'
+              },
+              home:{
+                state:'New Delhi',
+                city:'New Delhi',
+                country : 'India'
+              }
+            }
+          }
+          // now copy to this obj to another obj
+          
+          const emp_2 = {...emp} // with spread (...)
+          const emp_3 = Object.assign({}, emp); // with object with assign function 
+          
+          // now change some value in both objects
+          
+          emp_2.address.home.state = 'Gurugram';
+          emp_3.address.home.city = 'Noida';
+          emp.address.home.country = 'USA';
+          
+          console.log('emp', emp);
+          console.log('emp_2', emp_2);
+          console.log('emp_3', emp_3);
+          // cehck to result and thing how do this. ????
+```
+
+
+#12 - d).  check with deep copy  solution
+
+
+```
+       const emp = {
+            name:'Rohit Azad',
+            age:35,
+            address:{
+              office:{
+                state:'Delhi',
+                city:'Delhi',
+                country : 'India'
+              },
+              home:{
+                state:'New Delhi',
+                city:'New Delhi',
+                country : 'India'
+              }
+            }
+          }
+          // now copy to this obj to another obj
+          
+          const emp_2 = JSON.parse(JSON.stringify(emp));
+          const emp_3 = JSON.parse(JSON.stringify(emp));
+          
+          // now change some value in both objects
+          
+          emp_2.address.home.state = 'Gurugram';
+          emp_3.address.home.city = 'Noida';
+          emp.address.home.country = 'USA';
+          
+          console.log('emp', emp);
+          console.log('emp_2', emp_2);
+          console.log('emp_3', emp_3);
+          // cehck to result now your problum is solved.
+```
+
