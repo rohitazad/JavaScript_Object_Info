@@ -188,6 +188,24 @@ console.log(emp) //  {name:'Rohit Azad', age:35}
 ```
 
 
+#10 Now learn about Object.keys() function
+
+
+```
+    //The Object.keys() method returns an array of a given object's own enumerable property names, iterated in the same order that a normal loop would.
+    const emp = {name:'Rohit Azad', age:35}
+    console.log(Object.keys(emp)); // expected output: Array ['name', 'age']
+
+```
+
+#11 Now learn about Object.values() function
+
+
+```
+    // The Object.values() method returns an array of a given object's own enumerable property values
+      const emp = {name:'Rohit Azad', age:35}
+    console.log(Object.values(emp)); // expected output: Array ['Rohit Azad', 35]
+```
 
 
 
